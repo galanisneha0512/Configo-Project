@@ -7,6 +7,9 @@ Laptop/Tablet → Left: Login Form | Right: Branding Section
 
 Mobile→ Top: Login Form | Bottom: Branding Section
 
+## Project Preview
+<img width="1920" height="975" alt="Cofingo_login" src="https://github.com/user-attachments/assets/e095bbe7-3b47-42a9-b6cc-87b525445f1a" />
+
 ## Built With
 HTML5 – Page structure
 
@@ -80,7 +83,13 @@ Utility classes to quickly apply common properties:
 ## Responsive Behavior
 
 A) Desktop / Laptop (> 991px) → Split screen (Login left, Branding right)
+<img width="1920" height="975" alt="Cofingo_login" src="https://github.com/user-attachments/assets/66032958-f782-4fee-af57-ba95c2013d36" />
+
 
 B) Tablet (769px – 990px) → Split screen but tighter spacing
+<img width="897" height="827" alt="Configo_login_tablet" src="https://github.com/user-attachments/assets/24bc691b-8510-4d9f-9fbe-60abd4811601" />
+
 
 C) Mobile (≤ 768px) → Stacked vertically (Login on top, Branding below)
+<img width="525" height="835" alt="Configo_login_mobile1" src="https://github.com/user-attachments/assets/758b4d41-d694-4b38-a86a-1af9479968dc" />
+<img width="518" height="826" alt="Configo_login_mobile2" src="https://github.com/user-attachments/assets/8218f79e-202d-43fc-a988-e7f415bd849b" />
