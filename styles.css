@@ -291,57 +291,62 @@ p {
         height: auto;
     }
 
-    #icon {
-        height: 3.125rem; /* 50px */
-        object-fit: cover;
-        position: relative;
-        bottom: 1rem;
-    }
-
-    .branding-page {
-        order: 2;
+    .nav {
         width: 100%;
-        height: auto;
-        min-height: 40vh;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        text-align: center;
-        padding: 1.25rem; /* 20px */
-        overflow: hidden;
+        padding: 0.5rem 1rem;
     }
 
-    .branding-page>img {
-        position: absolute;
-        bottom: 0;
-        right: 0;
+    #icon {
+        height: 1.8rem;
+        object-fit: contain;
     }
 
     .login-page {
         order: 1;
         width: 100%;
-        height: auto;
-        min-height: 60vh;
-        padding: 3.125rem; /* 50px */
+        height: auto;        
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .form {
-        width: 90%;
-        margin: 1.25rem auto; /* 20px */
+        width: 100%;
+        max-width: 400px;
+        margin: 1.25rem auto;
+        margin-top: 5rem;
     }
 
     .login-button {
         width: 100%;
     }
 
-    .footer {
-        position: absolute;
-        bottom: 0;
-        color: #8391a6;
-    }
-
-    .nav {
+    .branding-page {
+        order: 2;
         width: 100%;
+        height: auto;
+        padding: 1.25rem;
+        text-align: center;
     }
 
+    .branding-page > img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+
+    .footer {
+        width: 100%;
+        margin-top: 1.5rem;
+        padding: 0.5rem;
+        text-align: center;
+        font-size: 0.8rem;
+        color: #8391a6;
+        position: relative;
+    }
 }
