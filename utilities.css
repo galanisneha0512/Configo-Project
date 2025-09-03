@@ -1,0 +1,35 @@
+.d-flex
+{
+    display: flex;
+}
+
+.text-decoration-none
+{
+    text-decoration: none;
+}
+
+.text-white
+{
+    color: white;
+}
+
+.text-black
+{
+    color: black;
+}
+
+.d-flex-col
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-content-center
+{
+    justify-content: center;
+}
+
+.align-items-center
+{
+    align-items: center;
+}

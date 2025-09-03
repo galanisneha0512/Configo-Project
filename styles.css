@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    flex-direction: row;
+}
+
+/* login page starts */
+.login-page {
+    width: 50%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    position: sticky;
+    z-index: 2000000;
+}
+
+/* nav starts */
+.nav {
+    flex-direction: row;
+    width: 50vw;
+    height: 10%;
+    align-items: center;
+    padding: 1.25rem; /* 20px */
+    position: relative;
+    position: sticky;
+}
+
+#icon {
+    height: 150%;
+    object-fit: cover;
+    margin-top: 1.25rem; /* 20px */
+}
+
+#logo {
+    margin-bottom: 0.3125rem; /* 5px */
+    text-align: center;
+    padding: 0.3125rem; /* 5px */
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#sign-up-btn {
+    margin: 1.25rem; /* 20px */
+    text-align: center;
+    background-color: #f1f5f9;
+    border-radius: 0.375rem; /* 6px */
+    padding: 0.625rem; /* 10px */
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#sign-up-btn::after {
+    content: "Sign up only via Invitation";
+    position: absolute;
+    border-radius: 0.375rem; /* 6px */
+    top: 120%;
+    left: 50%;
+    color: #000;
+    background: #fff;
+    border-radius: 0.375rem; /* 6px */
+    padding: 0.375rem 0.75rem; /* 6px 12px */
+    font-size: 0.875rem; /* 14px */
+    white-space: nowrap;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15); /* 4px 8px */
+    transform: translateX(-50%);
+    font-weight: 500;
+    z-index: 20;
+}
+
+#sign-up-btn:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0.25rem); /* 4px */
+}
+
+/* nav ends */
+
+/* form starts */
+.form {
+    width: 55%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: auto;
+    margin-top: 10%;
+}
+
+h2 {
+    text-align: center;
+    margin: 0.3125rem; /* 5px */
+}
+
+p {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.589);
+    margin: 0.125rem; /* 2px */
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+.form-tag {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    height: 60%;
+}
+
+label {
+    font-size: large;
+    margin: 0.3125rem; /* 5px */
+    margin-bottom: 0;
+}
+
+input {
+    padding: 0.625rem; /* 10px */
+    width: 100%;
+    border-radius: 0.3125rem; /* 5px */
+    margin-top: 0;
+    margin: 0.3125rem; /* 5px */
+    margin-bottom: 0.3125rem; /* 5px */
+    outline: none;
+    border: 0.125rem solid #dbe2ea; /* 2px */
+}
+
+.login-button {
+    width: 100%; 
+    padding: 0.625rem; /* 10px */
+    margin: 0.3125rem; /* 5px */
+    margin-top: 1.875rem; /* 30px */
+
+    border: 0.125rem solid black; /* 2px */
+    border-radius: 0.3125rem; /* 5px */
+    outline: none;
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    transform: scale(1.02);
+}
+
+.help-password {
+    margin: 1.25rem; /* 20px */
+    padding: 0.3125rem; /* 5px */
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    padding-left: 0.3125rem; /* 5px */
+    color: black;
+}
+
+a:hover {
+    color: rgb(85, 26, 139);
+    text-decoration: underline;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2.5rem; /* 40px */
+    color: #8391a6;
+    text-align: center;
+}
+
+.details {
+    text-decoration: underline;
+    color: #8391a6;
+}
+
+/* form ends */
+/* login page ends */
+
+/* branding page starts */
+.branding-page {
+    flex-direction: column;
+    width: 50%;
+    align-items: end;
+    position: relative;
+    background: linear-gradient(to top right,#012242 0%,#002a4f 38%,#01396c 68%,#005097 100%);
+}
+
+#motto {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.branding-page h1,
+.branding-page p {
+    color: white;
+    width: 60%;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 15%;
+    z-index: 10;
+}
+
+p {
+    margin-top: 0.625rem; /* 10px */
+    z-index: 10;
+}
+
+.branding-page {
+  position: relative;
+  overflow: hidden;
+}
+
+.branding-page::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 65%;
+  height: 65%;
+  background: url("logo-icon.png") no-repeat center/contain;
+  background-position: 0% bottom;
+  margin: 0;
+  opacity: 0.18;
+  z-index: 0;
+}
+
+/* branding page ends */
+
+/* Desktop*/
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.login-page,
+.branding-page {
+    width: 50%;
+    height: 100vh;
+}
+
+/* Tablet*/
+@media (max-width: 1024px) and (min-width: 601px) {
+    .branding-page {
+        width: 50%;
+    }
+
+    .login-page {
+        width: 50%;
+    }
+
+    .branding-page h1 {
+        font-size: 1.6rem;
+    }
+
+    .branding-page p {
+        font-size: 1rem;
+    }
+
+    .branding-page>img {
+        width: 100%;
+    }
+
+    .form {
+        width: 80%;
+        margin-top: 10%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #icon {
+        height: 3.125rem; /* 50px */
+        object-fit: cover;
+        position: relative;
+        bottom: 1rem;
+    }
+
+    .branding-page {
+        order: 2;
+        width: 100%;
+        height: auto;
+        min-height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1.25rem; /* 20px */
+        overflow: hidden;
+    }
+
+    .branding-page>img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .login-page {
+        order: 1;
+        width: 100%;
+        height: auto;
+        min-height: 60vh;
+        padding: 3.125rem; /* 50px */
+    }
+
+    .form {
+        width: 90%;
+        margin: 1.25rem auto; /* 20px */
+    }
+
+    .login-button {
+        width: 100%;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        color: #8391a6;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+}
